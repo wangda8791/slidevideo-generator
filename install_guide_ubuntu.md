@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:mc3man/trusty-media
 
 sudo apt-get update
 
-sudo apt-get install ffmpeg gstreamer0.10-ffmpeg
+sudo apt-get install ffmpeg
 
 - install mjpegtools
 
@@ -47,7 +47,7 @@ sudo sh install.sh
 2. Install apache and PHP
 sudo apt-get update
 
-sudo apt-get install apache2 libapache2-mod-php5 php5
+sudo apt-get install apache2 libapache2-mod-php php
 
 - configure web project
 
@@ -55,6 +55,12 @@ sudo apt-get install apache2 libapache2-mod-php5 php5
 
 /var/www/html
 
-* conf file
+* copy project
+cp -R videogenerator /var/www/html
 
-/etc/apache2/apache2.conf
+* copy project with git
+cd /var/www/html
+git clone https://github.com/wangda8791/slidevideo-generator.git
+
+* resources folder - contains image directories
+* videos folder - contains generated video files

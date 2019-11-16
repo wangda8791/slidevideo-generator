@@ -62,7 +62,12 @@ curl -L -O http://tenet.dl.sourceforge.net/project/diascope/diascope/diascope-0.
 
 3. configure web project
 
+* copy project
     cp -R videogenerator /var/www/html
+
+* copy project with git
+    cd /var/www/html
+    git clone https://github.com/wangda8791/slidevideo-generator.git
 
 * resources folder - contains image directories
 * videos folder - contains generated video files

@@ -1,7 +1,7 @@
 <?php
 
-define("IMAGE_FOLDER_PATH", "/home/mlsdelivery/public_html/videogenerator/resources/");
-define("VIDEO_FOLDER_PATH", "/home/mlsdelivery/public_html/videogenerator/videos/");
+define("IMAGE_FOLDER_PATH", "/var/www/html/videogenerator/resources/");
+define("VIDEO_FOLDER_PATH", "/var/www/html/videogenerator/videos/");
 
 // get files or directories
 function dirlist($dir, $bool = "dirs"){
